@@ -62,7 +62,7 @@ class ConwayGrid:
         for i in range(self.rows):
             for j in range(self.cols):
                 alive = self.grid[i][j]
-                color = BLACK if alive else WHITE
+                color = WHITE if alive else BLACK
                 pygame.draw.rect(
                     win,
                     color,
